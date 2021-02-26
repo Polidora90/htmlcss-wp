@@ -4,15 +4,39 @@
     padding: 0;
 }
 
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .wrapper {
     width: 50%;
     margin: auto;
 }
 
 .wrapper > header {
-    height: 100px;
-    background-color: #e579e6;
     margin-bottom: 20px;
+}
+
+#logo-neori {
+    width: 170px;
+    padding: 10px 30px 0 5px;
+    border-right: 1px solid grey;
+}
+
+nav > ul > li {
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+nav a {
+    color: grey; 
+    text-decoration: none;
+}
+
+.container {
+    height: 80%;
 }
 
 section:first-child {
@@ -61,8 +85,4 @@ aside, main:empty {
 footer {
     height: 70px;
     background-color: #8801fe;
-}
-
-.container {
-    height: 80%;
 }
