@@ -40,7 +40,6 @@ nav a {
 }
 
 section:first-child {
-    height: 300px;
     background-image: url(img/banner.jpg);
     background-position: center;
     background-size: cover;
@@ -48,10 +47,7 @@ section:first-child {
 }
 
 #first-section-text {
-    height: 25%;
-    width: 60%;
-    padding-top: 27%;
-    padding-left: 5%;
+    padding: 27% 40% 5% 5%;
     color: white;
 }
 
@@ -59,33 +55,48 @@ section:first-child {
     font-size: 12px;
 }
 
+section > header > h2 {
+    font-size: 30px;
+}
+
+section > header > p, .container p {
+    color: grey;
+    font-size: 12px;
+}
+
 section:nth-child(2) {
     height: 400px;
-    background-color: #008eff;
     margin-bottom: 10px;
 }
 
 section > header {
     height: 20%;
-    background-color: #abcfe7;
 }
 
 aside {
     width: 25%;
     height: calc(100% - 40px);
-    background-color: #abcfe7;
     float: left;
 }
 
-main:empty {
+.article-img > img {
+    width: 100%;
+}
+
+.article-img {
+    height: 40%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+article {
     width: calc(50% - 40px);
     height: calc(100% - 40px);
-    background-color: #abcfe7;
     float: left;
     margin: 0 20px 0 20px;
 }
 
-aside, main:empty {
+aside, article {
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -96,11 +107,23 @@ aside, main:empty {
     clear: both
 }
 
-footer {
-    height: 70px;
-    background-color: #8801fe;
-}
 
-section:first-child {
+section:first-child, .article-img {
     border-radius: 10px;
 }
+
+footer {
+    height: 100px;
+}
+
+footer p {
+    text-align: center;
+    vertical-align: middle;
+}
+
+footer span {
+    color: red;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
